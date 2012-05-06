@@ -13,7 +13,9 @@ WP Lipsum is a simple plugin for generating dummy text for your WordPress site.
 
 WP Lipsum includes a collection of template fragments representing lots of common page types, from simple lorem ipsum paragraphs to demos of the WP comment system, and more. It works via shortcode or template tag.
 
-Here's the shortcode:
+= Shortcodes =
+
+Here are the basic shortcodes you can use.
 
 [lipsum]
 This outputs the basic content block. You can edit this in wp-lipsum/templates/basic.php.
@@ -30,7 +32,24 @@ This loads the ordered list template and displays it 3 times.
 [lipsum t=ol r=3]
 You can also use “t” and “r” as parameter shortcuts.
 
-Here are the full pages you can call:
+= Image Dimensions =
+
+For the image templates, you can also pass in custom dimensions with the "width", "height" and "align" parameters (shorcuts w, h and a). This works for the img, caption, portfolio & portfolio_item, and gallery & gallery_item templates.
+
+[lipsum template=img width=300 height=150]
+
+[lipsum t=caption w=300 h=150 a=right]
+
+[lipsum t=gallery w=500 h=220]
+
+[lipsum t=portfolio w=100 h=100]
+
+Align can be "left", "right", "center" or "none". The dimensions default to 200x200, and alignleft.
+
+
+= Lipsum Templates =
+
+Here are the full lipsum pages you can call:
 
 Basic Content – “basic”
 Aux Content – “aux”
@@ -65,11 +84,16 @@ All lipsum template snippets are located in plugins/wp-lipsum/templates. You can
 
 Templates use Bedrock conventions, including class names (like .table-style and .post-nav), using H1s and H2s only for titles, and other concepts.
 
+= Template Tags =
+
 You can also call the plugin from the template code, by using these template tags:
 
 `<?php display_lipsum_template($template, $repeat); ?>`
 `<?php display_lipsum_template(‘basic’) ?>' (this would include the basic.php template)
 `<?php display_lipsum_template(‘table’, 4) ?>' ( this would include the table.php fragment and repeat it 4 times)
+`<?php display_lipsum_template(‘caption’, 1, 500, 300) ?>' ( this would include the caption.php fragment and give the image 500x300 dimensions)
+
+= More Info =
 
 [WPLipsum](http://bedrocktheme.com/wp-lipsum/ "View the WP-Lipsum homepage here") 
 
