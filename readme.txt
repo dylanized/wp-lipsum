@@ -11,6 +11,7 @@ WP-Lipsum is a simple plugin for generating dummy text for your WordPress site.
 
 == Description ==
 
+
 WP-Lipsum includes a collection of template fragments representing lots of common page types, from simple lorem ipsum paragraphs to demos of the WP comment system, and more. It works via a simple shortcode or template tag.
 
 = Using the Shortcode =
@@ -30,21 +31,9 @@ This loads the ordered list template and displays it 3 times.
 `[lipsum t=ol r=3]`
 You can also use “t” and “r” as parameter shortcuts.
 
-= Image Dimensions =
-
-For the image templates, you can also pass in custom dimensions with the "width", "height" and "align" parameters (shorcuts w, h and a). This works for the img, caption, portfolio & portfolio_item, and gallery & gallery_item templates.
-
-`[lipsum template=img width=300 height=150]`
-
-`[lipsum t=caption w=300 h=150 a=right]`
-
-`[lipsum t=gallery w=500 h=220]`
-
-`[lipsum t=portfolio w=100 h=100]`
-
-Align can be set to "left", "right", "center" or "none". These parameters default to 200x200, and alignleft.
 
 = Lipsum Templates and Fragments =
+
 
 Here are the full pages of lipsum content available:
 
@@ -82,7 +71,26 @@ All lipsum template snippets are located in plugins/wp-lipsum/templates. You can
 
 Templates use Bedrock conventions, including class names (like .table-style and .post-nav), using H1s and H2s only for titles, and other concepts.
 
+
+= Image Dimensions =
+
+
+For the image templates, you can also pass in custom dimensions with the "width", "height" and "align" parameters (shorcuts w, h and a). This works for the img, caption, portfolio & portfolio_item, and gallery & gallery_item templates.
+
+`[lipsum template=img width=300 height=150]`
+
+`[lipsum t=caption w=300 h=150 a=right]`
+
+`[lipsum t=gallery w=500 h=220]`
+
+`[lipsum t=portfolio w=100 h=100]`
+
+Align can be set to "left", "right", "center" or "none". These parameters default to 200x200, and alignleft.
+
+
+
 = Using the Template Tag =
+
 
 You can also call the plugin from your theme code, by using the display_lipsum)_template() function:
 
@@ -92,6 +100,7 @@ You can also call the plugin from your theme code, by using the display_lipsum)_
 `<?php display_lipsum_template('caption', 1, 500, 300, 'right') ?>'
 
 = More Info =
+
 
 [View the WP-Lipsum homepage here](http://bedrocktheme.com/wp-lipsum/ "View the WP-Lipsum homepage here") 
 
