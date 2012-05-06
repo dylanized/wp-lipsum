@@ -1,0 +1,1 @@
+<?php display_lipsum_template('gallery_item', 4); ?>

@@ -1,0 +1,3 @@
+<blockquote>
+	<p>This is a blockquote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer sollicitudin. Nullam vitae lectus vel elit consectetuer laoreet. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin eleifend, neque in volutpat pretium, nibh erat iaculis ante, quis scelerisque ante felis eget sem. Proin est odio, placerat nec, molestie eget, egestas ac, felis.</p>
+</blockquote>

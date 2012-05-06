@@ -1,0 +1,1 @@
+<img class="align<?= $align ?>" src="http://placehold.it/<?= $width ?>x<?= $height ?>" alt="" />
