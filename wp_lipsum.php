@@ -12,6 +12,14 @@ define('LIPSUMPATH', ABSPATH . 'wp-content/plugins/' . dirname(plugin_basename(_
 define('LIPSUMTEMPLATES', LIPSUMPATH . 'templates/');
 define('LIPSUMWEBPATH', '/wp-content/plugins/' . dirname(plugin_basename(__FILE__)) . '/');
 
+$wplipsum_defaults = new stdClass();
+
+$wplipsum_defaults->width = 200;
+$wplipsum_defaults->height = 200;
+$wplipsum_defaults->gallery_width = 960;
+$wplipsum_defaults->gallery_height = 300;
+$wplipsum_defaults->align = "left";
+
 // lipsum function
 
 	function display_lipsum($atts) {
@@ -55,19 +63,26 @@ define('LIPSUMWEBPATH', '/wp-content/plugins/' . dirname(plugin_basename(__FILE_
 	
 	}		
 
-	function display_lipsum_template($template='basic', $repeat=1, $width=false, $height=false, $align='left') {
+	function display_lipsum_template($template='basic', $repeat=1, $width=false, $height=false, $align=false) {
+	
+		global $wplipsum_defaults;
 
 		// set default width
 		if (!$width) {
-			if ($template=='gallery' || $template=='gallery_item') $width = 960;
-			else $width = 200;
+			if ($template=='gallery' || $template=='gallery_item') $width = $wplipsum_defaults->gallery_width;
+			else $width = $wplipsum_defaults->width;
 		}
 			
 		// set default height
 		if (!$height) {
-			if ($template=='gallery' || $template=='gallery_item') $height = 300;
-			else $height = 200;
+			if ($template=='gallery' || $template=='gallery_item') $height = $wplipsum_defaults->gallery_height;
+			else $height = $wplipsum_defaults->height;
 		}		
+		
+		// set default align
+		if (!$align) {
+			$align = $wplipsum_defaults->align;
+		}
 
 		$path = LIPSUMTEMPLATES . "$template.php";
 		for ($i = 1; $i <= $repeat; $i++) {
