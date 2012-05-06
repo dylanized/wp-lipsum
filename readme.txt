@@ -92,12 +92,12 @@ Align can be set to "left", "right", "center" or "none". These parameters defaul
 = Using the Template Tag =
 
 
-You can also call the plugin from your theme code, by using the display_lipsum)_template() function:
+You can also call the plugin from your theme code, by using the display_lipsum_template() function:
 
 `<?php display_lipsum_template($template, $repeat); ?>`
 `<?php display_lipsum_template('basic') ?>`
 `<?php display_lipsum_template('table', 4) ?>`
-`<?php display_lipsum_template('caption', 1, 500, 300, 'right') ?>'
+`<?php display_lipsum_template('caption', 1, 500, 300, 'right') ?>`
 
 = More Info =
 
