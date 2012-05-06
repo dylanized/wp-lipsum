@@ -3,7 +3,7 @@ Contributors: dylanized (this should be a list of wordpress.org userid's)
 Tags: dummy text, lorem ipsum, lipsum
 Requires at least: 3.3.2
 Tested up to: 3.3.2
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,9 @@ WP-Lipsum is a part of the Bedrock mini-framework, more info at [Bedrock](http:/
 3. The "blog" template
 
 == Changelog ==
+
+= 1.4 =
+* Added image dimensions and alignment parameters, and the img template
 
 = 1.3 =
 * Added "t" and "r" shortcuts, subitted to WP Directory
