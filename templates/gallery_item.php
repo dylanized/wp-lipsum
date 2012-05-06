@@ -1,4 +1,4 @@
 <p>
-	<img src="http://placehold.it/960x300" alt="" />
+	<img src="http://placehold.it/<?= $width ?>x<?= $height ?>" alt="" />
 	<div class="caption"></div>
 </p>

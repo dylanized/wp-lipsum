@@ -1,1 +1,1 @@
-<?php display_lipsum_template('gallery_item', 4); ?>
+<?php display_lipsum_template('gallery_item', 4, $width, $height); ?>
