@@ -4,7 +4,7 @@
 
 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, vivamus bibendum elit id commodo suscipit</h3>
 
-<?php display_lipsum_template('caption'); ?>
+<?php display_lipsum_template('caption', 1, 200, 200, 'right'); ?>
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer sollicitudin. Nullam vitae lectus vel elit consectetuer laoreet. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="#" title="">Proin est odio, placerat nec, molestie eget, egestas ac, felis.</a> Praesent aliquam neque ut metus. In vel urna. Vestibulum et quam id arcu facilisis aliquam. Phasellus dui elit, varius nec, euismod id, laoreet eu, dolor.</p>
 
